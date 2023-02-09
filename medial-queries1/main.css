@@ -1,3 +1,72 @@
 body {
   background: blanchedalmond;
 }
+
+/*mobile view*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.container > div{
+  display: flex;
+  align-content: space-between;
+}
+
+.a{
+  display: flex;
+  min-width: 100%;
+  min-height: 15rem;
+  border: 1px solid gray;
+  background-color: lightgray;
+  border-radius: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.b{
+  display: flex;
+  min-height: 77rem;
+  min-width: 100%;
+  border: 1px solid gray;
+  background-color: lightgray;
+  border-radius: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.c{
+  display: flex;
+  min-height: 15rem;
+  min-width: 100%;
+  border: 1px solid gray;
+  background-color: lightgray;
+  border-radius: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/*desktop view*/
+@media screen and (min-width: 1000px){
+  .container >div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+  }
+
+  .a{
+    min-height: 10rem;
+    min-width: 100%;
+  }
+  .b{
+    min-width: 70%;
+  }
+  
+  .c{
+    min-width: 29%;
+    min-height: 115rem;
+  }
+  
+}
